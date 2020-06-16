@@ -6,7 +6,7 @@ function round_nfs($numero, $decimais){
 	if(($numero3) < 0.5){
 		return $numero2/(pow(10,$decimais));
 	}
-	elseif(($numero3) >= 0.51){
+	elseif(($numero3) >= 0.5+(0.1*pow(10,$decimais))){
 		return ($numero2+1)/(pow(10,$decimais));
 	}else{
 		if(($numero2+1)%2==0){
